@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Fri Jun 23 17:09:59 2017
+# Process ID: 6948
+# Current directory: D:/Projects/3ph_f2f/sysgen/netlist
+# Command line: vivado.exe -mode batch -source ProjectGeneration.tcl -notrace
+# Log file: D:/Projects/3ph_f2f/sysgen/netlist/vivado.log
+# Journal file: D:/Projects/3ph_f2f/sysgen/netlist\vivado.jou
+#-----------------------------------------------------------
+source ProjectGeneration.tcl -notrace

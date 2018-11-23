@@ -1,0 +1,281 @@
+
+*** Running vivado
+    with args -log top_design_pwm_3rdharm_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_design_pwm_3rdharm_0_1.tcl
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source top_design_pwm_3rdharm_0_1.tcl -notrace
+Command: synth_design -top top_design_pwm_3rdharm_0_1 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010-clg400'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3196 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 332.539 ; gain = 82.586
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_design_pwm_3rdharm_0_1' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ip/top_design_pwm_3rdharm_0_1/synth/top_design_pwm_3rdharm_0_1.vhd:70]
+INFO: [Synth 8-3491] module 'PWM_3rdHarm' declared at 'd:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/bc35/src/PWM_3rdHarm.vhd:35' bound to instance 'U0' of component 'PWM_3rdHarm' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ip/top_design_pwm_3rdharm_0_1/synth/top_design_pwm_3rdharm_0_1.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'PWM_3rdHarm' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/bc35/src/PWM_3rdHarm.vhd:48]
+WARNING: [Synth 8-6014] Unused sequential element dMax_reg was removed.  [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/bc35/src/PWM_3rdHarm.vhd:79]
+WARNING: [Synth 8-6014] Unused sequential element dMin_reg was removed.  [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/bc35/src/PWM_3rdHarm.vhd:84]
+WARNING: [Synth 8-6014] Unused sequential element vHomopolar_reg was removed.  [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/bc35/src/PWM_3rdHarm.vhd:89]
+INFO: [Synth 8-256] done synthesizing module 'PWM_3rdHarm' (1#1) [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/bc35/src/PWM_3rdHarm.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'top_design_pwm_3rdharm_0_1' (2#1) [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ip/top_design_pwm_3rdharm_0_1/synth/top_design_pwm_3rdharm_0_1.vhd:70]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 372.867 ; gain = 122.914
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 372.867 ; gain = 122.914
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 651.242 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 651.242 ; gain = 401.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 651.242 ; gain = 401.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 651.242 ; gain = 401.289
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "up_down" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "up_down" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element tri_count_reg was removed.  [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/bc35/src/PWM_3rdHarm.vhd:59]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 651.242 ; gain = 401.289
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 2     
+	   3 Input      9 Bit       Adders := 3     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 7     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module PWM_3rdHarm 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 2     
+	   3 Input      9 Bit       Adders := 3     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 7     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "U0/up_down" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "U0/up_down" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element U0/tri_count_reg was removed.  [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/bc35/src/PWM_3rdHarm.vhd:59]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 651.242 ; gain = 401.289
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 651.242 ; gain = 401.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 651.242 ; gain = 401.289
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 656.535 ; gain = 406.582
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 656.535 ; gain = 406.582
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 656.535 ; gain = 406.582
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 656.535 ; gain = 406.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 656.535 ; gain = 406.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 656.535 ; gain = 406.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 656.535 ; gain = 406.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    28|
+|2     |LUT1   |     7|
+|3     |LUT2   |    51|
+|4     |LUT3   |    27|
+|5     |LUT4   |    40|
+|6     |LUT5   |    37|
+|7     |LUT6   |    77|
+|8     |FDCE   |     9|
+|9     |FDRE   |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+------------+------+
+|      |Instance |Module      |Cells |
++------+---------+------------+------+
+|1     |top      |            |   277|
+|2     |  U0     |PWM_3rdHarm |   277|
++------+---------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 656.535 ; gain = 406.582
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 656.535 ; gain = 128.207
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 656.535 ; gain = 406.582
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 28 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+19 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 659.953 ; gain = 410.832
+INFO: [Common 17-1381] The checkpoint 'D:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.runs/top_design_pwm_3rdharm_0_1_synth_1/top_design_pwm_3rdharm_0_1.dcp' has been generated.

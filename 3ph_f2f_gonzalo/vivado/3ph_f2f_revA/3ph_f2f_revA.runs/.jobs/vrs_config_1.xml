@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="top_design_processing_system7_0_0_synth_1" LaunchDir="D:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.runs/top_design_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_design_adc_interface_0_0_synth_1" LaunchDir="D:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.runs/top_design_adc_interface_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_design_fsm_controller_0_0_synth_1" LaunchDir="D:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.runs/top_design_fsm_controller_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_design_rst_ps7_0_100M_0_synth_1" LaunchDir="D:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.runs/top_design_rst_ps7_0_100M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_design_pwm_3rdharm_0_1_synth_1" LaunchDir="D:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.runs/top_design_pwm_3rdharm_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_design_pwm_3rdharm_0_2_synth_1" LaunchDir="D:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.runs/top_design_pwm_3rdharm_0_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_design_vsi_control_0_0_synth_1" LaunchDir="D:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.runs/top_design_vsi_control_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_design_current_ref_generator_0_0_synth_1" LaunchDir="D:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.runs/top_design_current_ref_generator_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_design_current_control_0_0_synth_1" LaunchDir="D:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.runs/top_design_current_control_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_design_xbar_0_synth_1" LaunchDir="D:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.runs/top_design_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_design_phase_generator_0_0_synth_1" LaunchDir="D:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.runs/top_design_phase_generator_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_design_voltage_control_0_0_synth_1" LaunchDir="D:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.runs/top_design_voltage_control_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_design_scope_3ph_0_0_synth_1" LaunchDir="D:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.runs/top_design_scope_3ph_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_design_blk_mem_gen_0_0_synth_1" LaunchDir="D:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.runs/top_design_blk_mem_gen_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_design_axi_bram_ctrl_0_0_synth_1" LaunchDir="D:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.runs/top_design_axi_bram_ctrl_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_design_xlslice_0_0_synth_1" LaunchDir="D:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.runs/top_design_xlslice_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_design_xlconcat_0_0_synth_1" LaunchDir="D:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.runs/top_design_xlconcat_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_design_util_vector_logic_0_0_synth_1" LaunchDir="D:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.runs/top_design_util_vector_logic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_design_auto_pc_5_synth_1" LaunchDir="D:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.runs/top_design_auto_pc_5_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_design_auto_pc_4_synth_1" LaunchDir="D:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.runs/top_design_auto_pc_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_design_auto_pc_3_synth_1" LaunchDir="D:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.runs/top_design_auto_pc_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_design_auto_pc_2_synth_1" LaunchDir="D:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.runs/top_design_auto_pc_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_design_auto_pc_1_synth_1" LaunchDir="D:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.runs/top_design_auto_pc_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_design_auto_pc_0_synth_1" LaunchDir="D:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.runs/top_design_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_design_auto_pc_6_synth_1" LaunchDir="D:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.runs/top_design_auto_pc_6_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

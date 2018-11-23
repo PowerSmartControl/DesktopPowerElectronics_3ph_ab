@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Fri Jul 28 16:46:28 2017
+# Process ID: 15216
+# Current directory: D:/Projects/3ph_f2f/vivado/3ph_f2f_revA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3720 D:\Projects\3ph_f2f\vivado\3ph_f2f_revA\3ph_f2f_revA.xpr
+# Log file: D:/Projects/3ph_f2f/vivado/3ph_f2f_revA/vivado.log
+# Journal file: D:/Projects/3ph_f2f/vivado/3ph_f2f_revA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Projects/3ph_f2f/vivado/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 860.605 ; gain = 97.801
+update_compile_order -fileset sources_1
+open_bd_design {D:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/top_design.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- PSC:lib3ph:adc_interface:1.0 - adc_interface_0
+Adding cell -- PSC:lib3ph:fsm_controller:1.0 - fsm_controller_0
+Adding cell -- PSC:lib3ph:pwm_3rdharm:1.0 - pwm_3rdharm_0
+Adding cell -- PSC:lib3ph:pwm_3rdharm:1.0 - pwm_3rdharm_1
+Adding cell -- PSC:lib3ph:scope_3ph:1.1 - scope_3ph_0
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.3 - blk_mem_gen_0
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.0 - axi_bram_ctrl_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding cell -- PSC:hls:current_control:1.1 - current_control_0
+Adding cell -- PSC:hls:vsi_control:2.1 - vsi_control_0
+Adding cell -- PSC:hls:current_ref_generator:1.4 - current_ref_generator_0
+Adding cell -- PSC:hls:phase_generator:1.1 - phase_generator_0
+Adding cell -- PSC:hls:voltage_control:1.2 - voltage_control_0
+Adding cell -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /processing_system7_0/FCLK_RESET0_N(rst) and /adc_interface_0/nRST(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /rst_ps7_0_100M/peripheral_aresetn(rst) and /pwm_3rdharm_0/nRST(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /rst_ps7_0_100M/peripheral_aresetn(rst) and /pwm_3rdharm_1/nRST(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /rst_ps7_0_100M/peripheral_aresetn(rst) and /phase_generator_0/ap_start(undef)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Successfully read diagram <top_design> from BD file <D:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/top_design.bd>
+open_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 931.293 ; gain = 70.113
+save_project_as 3ph_f2f_dq_revA D:/Projects/3ph_f2f/vivado/3ph_f2f_dq_revA -force
+Wrote  : <D:/Projects/3ph_f2f/vivado/3ph_f2f_dq_revA/3ph_f2f_dq_revA.srcs/sources_1/bd/top_design/ui/bd_4b95f7a8.ui> 
+save_project_as: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 943.703 ; gain = 0.000
+reset_run synth_1
+save_project_as 3ph_f2f_dq_rev00 D:/Projects/PSoC_3ph_f2f/vivado/3ph_f2f_dq_rev00 -force
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Aug  5 12:02:55 2017...

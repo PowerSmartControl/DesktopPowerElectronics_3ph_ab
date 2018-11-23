@@ -1,0 +1,981 @@
+
+*** Running vivado
+    with args -log top_design_vsi_control_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_design_vsi_control_0_0.tcl
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source top_design_vsi_control_0_0.tcl -notrace
+Command: synth_design -top top_design_vsi_control_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010-clg400'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8196 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 334.637 ; gain = 83.895
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-1090] 'floating_point_v7_1_2' is not compiled in library floating_point_v7_1_2 [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/ip/vsi_control_ap_faddfsub_3_full_dsp_32.vhd:57]
+WARNING: [Synth 8-1090] 'floating_point_v7_1_2' is not compiled in library floating_point_v7_1_2 [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/ip/vsi_control_ap_fadd_3_full_dsp_32.vhd:57]
+WARNING: [Synth 8-1090] 'floating_point_v7_1_2' is not compiled in library floating_point_v7_1_2 [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/ip/vsi_control_ap_fcmp_0_no_dsp_32.vhd:57]
+WARNING: [Synth 8-1090] 'floating_point_v7_1_2' is not compiled in library floating_point_v7_1_2 [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/ip/vsi_control_ap_fmul_2_max_dsp_32.vhd:57]
+WARNING: [Synth 8-1090] 'floating_point_v7_1_2' is not compiled in library floating_point_v7_1_2 [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/ip/vsi_control_ap_sitofp_4_no_dsp_32.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'top_design_vsi_control_0_0' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ip/top_design_vsi_control_0_0/synth/top_design_vsi_control_0_0.vhd:97]
+	Parameter C_S_AXI_AXILITES_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter C_S_AXI_AXILITES_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'vsi_control' declared at 'd:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control.vhd:12' bound to instance 'U0' of component 'vsi_control' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ip/top_design_vsi_control_0_0/synth/top_design_vsi_control_0_0.vhd:186]
+INFO: [Synth 8-638] synthesizing module 'vsi_control' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control.vhd:56]
+	Parameter C_S_AXI_AXILITES_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter C_S_AXI_AXILITES_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control.vhd:189]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'vsi_control_AXILiteS_s_axi' declared at 'd:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control_AXILiteS_s_axi.vhd:12' bound to instance 'vsi_control_AXILiteS_s_axi_U' of component 'vsi_control_AXILiteS_s_axi' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control.vhd:663]
+INFO: [Synth 8-638] synthesizing module 'vsi_control_AXILiteS_s_axi' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control_AXILiteS_s_axi.vhd:93]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'vsi_control_AXILiteS_s_axi' (1#1) [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control_AXILiteS_s_axi.vhd:93]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'vsi_control_faddfsub_32ns_32ns_32_5_full_dsp' declared at 'd:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control_faddfsub_32ns_32ns_32_5_full_dsp.vhd:11' bound to instance 'vsi_control_faddfsub_32ns_32ns_32_5_full_dsp_U0' of component 'vsi_control_faddfsub_32ns_32ns_32_5_full_dsp' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control.vhd:699]
+INFO: [Synth 8-638] synthesizing module 'vsi_control_faddfsub_32ns_32ns_32_5_full_dsp' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control_faddfsub_32ns_32ns_32_5_full_dsp.vhd:30]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'vsi_control_ap_faddfsub_3_full_dsp_32' declared at 'd:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/ip/vsi_control_ap_faddfsub_3_full_dsp_32.vhd:59' bound to instance 'vsi_control_ap_faddfsub_3_full_dsp_32_u' of component 'vsi_control_ap_faddfsub_3_full_dsp_32' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control_faddfsub_32ns_32ns_32_5_full_dsp.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'vsi_control_ap_faddfsub_3_full_dsp_32' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/ip/vsi_control_ap_faddfsub_3_full_dsp_32.vhd:74]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_ADD bound to: 1 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 1 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 1 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-637] synthesizing blackbox instance 'U0' of component 'floating_point_v7_1_2' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/ip/vsi_control_ap_faddfsub_3_full_dsp_32.vhd:201]
+INFO: [Synth 8-256] done synthesizing module 'vsi_control_ap_faddfsub_3_full_dsp_32' (2#1) [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/ip/vsi_control_ap_faddfsub_3_full_dsp_32.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'vsi_control_faddfsub_32ns_32ns_32_5_full_dsp' (3#1) [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control_faddfsub_32ns_32ns_32_5_full_dsp.vhd:30]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'vsi_control_fadd_32ns_32ns_32_5_full_dsp' declared at 'd:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control_fadd_32ns_32ns_32_5_full_dsp.vhd:11' bound to instance 'vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1' of component 'vsi_control_fadd_32ns_32ns_32_5_full_dsp' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control.vhd:715]
+INFO: [Synth 8-638] synthesizing module 'vsi_control_fadd_32ns_32ns_32_5_full_dsp' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control_fadd_32ns_32ns_32_5_full_dsp.vhd:29]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'vsi_control_ap_fadd_3_full_dsp_32' declared at 'd:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/ip/vsi_control_ap_fadd_3_full_dsp_32.vhd:59' bound to instance 'vsi_control_ap_fadd_3_full_dsp_32_u' of component 'vsi_control_ap_fadd_3_full_dsp_32' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control_fadd_32ns_32ns_32_5_full_dsp.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'vsi_control_ap_fadd_3_full_dsp_32' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/ip/vsi_control_ap_fadd_3_full_dsp_32.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_ADD bound to: 1 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-637] synthesizing blackbox instance 'U0' of component 'floating_point_v7_1_2' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/ip/vsi_control_ap_fadd_3_full_dsp_32.vhd:197]
+INFO: [Synth 8-256] done synthesizing module 'vsi_control_ap_fadd_3_full_dsp_32' (4#1) [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/ip/vsi_control_ap_fadd_3_full_dsp_32.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'vsi_control_fadd_32ns_32ns_32_5_full_dsp' (5#1) [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control_fadd_32ns_32ns_32_5_full_dsp.vhd:29]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'vsi_control_fmul_32ns_32ns_32_4_max_dsp' declared at 'd:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control_fmul_32ns_32ns_32_4_max_dsp.vhd:11' bound to instance 'vsi_control_fmul_32ns_32ns_32_4_max_dsp_U2' of component 'vsi_control_fmul_32ns_32ns_32_4_max_dsp' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control.vhd:730]
+INFO: [Synth 8-638] synthesizing module 'vsi_control_fmul_32ns_32ns_32_4_max_dsp' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control_fmul_32ns_32ns_32_4_max_dsp.vhd:29]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'vsi_control_ap_fmul_2_max_dsp_32' declared at 'd:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/ip/vsi_control_ap_fmul_2_max_dsp_32.vhd:59' bound to instance 'vsi_control_ap_fmul_2_max_dsp_32_u' of component 'vsi_control_ap_fmul_2_max_dsp_32' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control_fmul_32ns_32ns_32_4_max_dsp.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'vsi_control_ap_fmul_2_max_dsp_32' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/ip/vsi_control_ap_fmul_2_max_dsp_32.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 1 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 2 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 3 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-637] synthesizing blackbox instance 'U0' of component 'floating_point_v7_1_2' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/ip/vsi_control_ap_fmul_2_max_dsp_32.vhd:197]
+INFO: [Synth 8-256] done synthesizing module 'vsi_control_ap_fmul_2_max_dsp_32' (6#1) [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/ip/vsi_control_ap_fmul_2_max_dsp_32.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'vsi_control_fmul_32ns_32ns_32_4_max_dsp' (7#1) [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control_fmul_32ns_32ns_32_4_max_dsp.vhd:29]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'vsi_control_fmul_32ns_32ns_32_4_max_dsp' declared at 'd:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control_fmul_32ns_32ns_32_4_max_dsp.vhd:11' bound to instance 'vsi_control_fmul_32ns_32ns_32_4_max_dsp_U3' of component 'vsi_control_fmul_32ns_32ns_32_4_max_dsp' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control.vhd:745]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'vsi_control_fmul_32ns_32ns_32_4_max_dsp' declared at 'd:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control_fmul_32ns_32ns_32_4_max_dsp.vhd:11' bound to instance 'vsi_control_fmul_32ns_32ns_32_4_max_dsp_U4' of component 'vsi_control_fmul_32ns_32ns_32_4_max_dsp' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control.vhd:760]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'vsi_control_fmul_32ns_32ns_32_4_max_dsp' declared at 'd:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control_fmul_32ns_32ns_32_4_max_dsp.vhd:11' bound to instance 'vsi_control_fmul_32ns_32ns_32_4_max_dsp_U5' of component 'vsi_control_fmul_32ns_32ns_32_4_max_dsp' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control.vhd:775]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 6 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'vsi_control_sitofp_32ns_32_6' declared at 'd:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control_sitofp_32ns_32_6.vhd:11' bound to instance 'vsi_control_sitofp_32ns_32_6_U6' of component 'vsi_control_sitofp_32ns_32_6' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control.vhd:790]
+INFO: [Synth 8-638] synthesizing module 'vsi_control_sitofp_32ns_32_6' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control_sitofp_32ns_32_6.vhd:27]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 6 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'vsi_control_ap_sitofp_4_no_dsp_32' declared at 'd:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/ip/vsi_control_ap_sitofp_4_no_dsp_32.vhd:59' bound to instance 'vsi_control_ap_sitofp_4_no_dsp_32_u' of component 'vsi_control_ap_sitofp_4_no_dsp_32' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control_sitofp_32ns_32_6.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'vsi_control_ap_sitofp_4_no_dsp_32' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/ip/vsi_control_ap_sitofp_4_no_dsp_32.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 1 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 4 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-637] synthesizing blackbox instance 'U0' of component 'floating_point_v7_1_2' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/ip/vsi_control_ap_sitofp_4_no_dsp_32.vhd:193]
+INFO: [Synth 8-256] done synthesizing module 'vsi_control_ap_sitofp_4_no_dsp_32' (8#1) [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/ip/vsi_control_ap_sitofp_4_no_dsp_32.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'vsi_control_sitofp_32ns_32_6' (9#1) [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control_sitofp_32ns_32_6.vhd:27]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 6 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'vsi_control_sitofp_32ns_32_6' declared at 'd:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control_sitofp_32ns_32_6.vhd:11' bound to instance 'vsi_control_sitofp_32ns_32_6_U7' of component 'vsi_control_sitofp_32ns_32_6' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control.vhd:803]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'vsi_control_fcmp_32ns_32ns_1_1' declared at 'd:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control_fcmp_32ns_32ns_1_1.vhd:11' bound to instance 'vsi_control_fcmp_32ns_32ns_1_1_U8' of component 'vsi_control_fcmp_32ns_32ns_1_1' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'vsi_control_fcmp_32ns_32ns_1_1' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control_fcmp_32ns_32ns_1_1.vhd:27]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'vsi_control_ap_fcmp_0_no_dsp_32' declared at 'd:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/ip/vsi_control_ap_fcmp_0_no_dsp_32.vhd:59' bound to instance 'vsi_control_ap_fcmp_0_no_dsp_32_u' of component 'vsi_control_ap_fcmp_0_no_dsp_32' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control_fcmp_32ns_32ns_1_1.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'vsi_control_ap_fcmp_0_no_dsp_32' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/ip/vsi_control_ap_fcmp_0_no_dsp_32.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 1 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 1 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-637] synthesizing blackbox instance 'U0' of component 'floating_point_v7_1_2' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/ip/vsi_control_ap_fcmp_0_no_dsp_32.vhd:197]
+INFO: [Synth 8-256] done synthesizing module 'vsi_control_ap_fcmp_0_no_dsp_32' (10#1) [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/ip/vsi_control_ap_fcmp_0_no_dsp_32.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'vsi_control_fcmp_32ns_32ns_1_1' (11#1) [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control_fcmp_32ns_32ns_1_1.vhd:27]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'vsi_control_fcmp_32ns_32ns_1_1' declared at 'd:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control_fcmp_32ns_32ns_1_1.vhd:11' bound to instance 'vsi_control_fcmp_32ns_32ns_1_1_U9' of component 'vsi_control_fcmp_32ns_32ns_1_1' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control.vhd:829]
+WARNING: [Synth 8-6014] Unused sequential element ap_ready_reg was removed.  [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control.vhd:1362]
+WARNING: [Synth 8-6014] Unused sequential element db_1_vld_in_reg was removed.  [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control.vhd:973]
+WARNING: [Synth 8-6014] Unused sequential element dc_1_vld_in_reg was removed.  [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control.vhd:981]
+WARNING: [Synth 8-6014] Unused sequential element ma8b_1_vld_in_reg was removed.  [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control.vhd:1032]
+WARNING: [Synth 8-6014] Unused sequential element notlhs6_fu_703_p2_reg was removed.  [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control.vhd:2272]
+WARNING: [Synth 8-6014] Unused sequential element notlhs_fu_465_p2_reg was removed.  [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control.vhd:2274]
+WARNING: [Synth 8-6014] Unused sequential element notrhs6_fu_709_p2_reg was removed.  [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control.vhd:2278]
+WARNING: [Synth 8-6014] Unused sequential element notrhs_fu_471_p2_reg was removed.  [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control.vhd:2280]
+INFO: [Synth 8-256] done synthesizing module 'vsi_control' (12#1) [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'top_design_vsi_control_0_0' (13#1) [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ip/top_design_vsi_control_0_0/synth/top_design_vsi_control_0_0.vhd:97]
+WARNING: [Synth 8-3331] design vsi_control_sitofp_32ns_32_6 has unconnected port reset
+WARNING: [Synth 8-3331] design vsi_control_fmul_32ns_32ns_32_4_max_dsp has unconnected port reset
+WARNING: [Synth 8-3331] design vsi_control_fadd_32ns_32ns_32_5_full_dsp has unconnected port reset
+WARNING: [Synth 8-3331] design vsi_control_faddfsub_32ns_32ns_32_5_full_dsp has unconnected port reset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 411.789 ; gain = 161.047
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 411.789 ; gain = 161.047
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ip/top_design_vsi_control_0_0/constraints/vsi_control_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ip/top_design_vsi_control_0_0/constraints/vsi_control_ooc.xdc] for cell 'U0'
+Parsing XDC File [D:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.runs/top_design_vsi_control_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.runs/top_design_vsi_control_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 689.199 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 689.199 ; gain = 438.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 689.199 ; gain = 438.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  D:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.runs/top_design_vsi_control_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 689.199 ; gain = 438.457
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "AWREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "WREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "BVALID" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ARREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RVALID_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "op_tdata" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "tmp_1_fu_495_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "notlhs8_fu_756_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "notrhs8_fu_762_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "notrhs2_fu_554_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "notlhs2_fu_548_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "notlhs5_fu_612_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "notrhs5_fu_618_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "notlhs3_fu_566_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "notrhs3_fu_572_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "tmp_1_fu_495_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "notlhs8_fu_756_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "notrhs8_fu_762_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "notrhs2_fu_554_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "notlhs2_fu_548_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "notlhs5_fu_612_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "notrhs5_fu_618_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "notlhs3_fu_566_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "notrhs3_fu_572_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "grp_fu_341_opcode" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "result_V_fu_920_p3" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "result_V_1_fu_1188_p3" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "grp_fu_303_opcode" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sat" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 689.199 ; gain = 438.457
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 8     
+	   2 Input      8 Bit       Adders := 5     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               67 Bit    Registers := 1     
+	               32 Bit    Registers := 42    
+	               23 Bit    Registers := 5     
+	                9 Bit    Registers := 6     
+	                8 Bit    Registers := 7     
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 23    
++---Muxes : 
+	  68 Input     67 Bit        Muxes := 1     
+	   2 Input     61 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 15    
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 11    
+	   3 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 2     
+	   8 Input      6 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 17    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module vsi_control_AXILiteS_s_axi 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 7     
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   5 Input      3 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module vsi_control_faddfsub_32ns_32ns_32_5_full_dsp 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+Module vsi_control_fadd_32ns_32ns_32_5_full_dsp 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+Module vsi_control_fmul_32ns_32ns_32_4_max_dsp 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+Module vsi_control_sitofp_32ns_32_6 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module vsi_control_fcmp_32ns_32ns_1_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+	   8 Input      6 Bit        Muxes := 1     
+Module vsi_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 8     
+	   2 Input      8 Bit       Adders := 5     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               67 Bit    Registers := 1     
+	               32 Bit    Registers := 21    
+	               23 Bit    Registers := 5     
+	                9 Bit    Registers := 6     
+	                8 Bit    Registers := 7     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 19    
++---Muxes : 
+	  68 Input     67 Bit        Muxes := 1     
+	   2 Input     61 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 9     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 11    
+	   3 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'vsi_control_fmul_32ns_32ns_32_4_max_dsp_U5/din0_buf1_reg[31:0]' into 'vsi_control_fmul_32ns_32ns_32_4_max_dsp_U4/din0_buf1_reg[31:0]' [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control_fmul_32ns_32ns_32_4_max_dsp.vhd:72]
+WARNING: [Synth 8-6014] Unused sequential element vsi_control_fmul_32ns_32ns_32_4_max_dsp_U5/din0_buf1_reg was removed.  [d:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.srcs/sources_1/bd/top_design/ipshared/9e21/hdl/vhdl/vsi_control_fmul_32ns_32ns_32_4_max_dsp.vhd:72]
+INFO: [Synth 8-5546] ROM "notlhs2_fu_548_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "notrhs2_fu_554_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "notlhs3_fu_566_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "notrhs3_fu_572_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "notlhs5_fu_612_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "notrhs5_fu_618_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "notlhs8_fu_756_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "notrhs8_fu_762_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[20] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[29] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[30] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[31] )
+INFO: [Synth 8-3886] merging instance 'U0/sh_assign_8_reg_1716_reg[8]' (FDE) to 'U0/isNeg_4_reg_1721_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_42_i_i2_reg_1727_reg[0]' (FDE) to 'U0/sh_assign_8_reg_1716_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/sh_assign_6_reg_1690_reg[8]' (FDE) to 'U0/isNeg_3_reg_1695_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_42_i_i1_reg_1701_reg[0]' (FDE) to 'U0/sh_assign_6_reg_1690_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/sh_assign_4_reg_1664_reg[8]' (FDE) to 'U0/isNeg_2_reg_1669_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_42_i_i_reg_1675_reg[0]' (FDE) to 'U0/sh_assign_4_reg_1664_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/vsi_control_AXILiteS_s_axi_U/rstate_reg[1]' (FDSE) to 'U0/vsi_control_AXILiteS_s_axi_U/rstate_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/vsi_control_AXILiteS_s_axi_U/\wstate_reg[2] )
+WARNING: [Synth 8-3332] Sequential element (wstate_reg[2]) is unused and will be removed from module vsi_control_AXILiteS_s_axi.
+WARNING: [Synth 8-3332] Sequential element (vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[31]) is unused and will be removed from module vsi_control.
+WARNING: [Synth 8-3332] Sequential element (vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[30]) is unused and will be removed from module vsi_control.
+WARNING: [Synth 8-3332] Sequential element (vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[29]) is unused and will be removed from module vsi_control.
+WARNING: [Synth 8-3332] Sequential element (vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[28]) is unused and will be removed from module vsi_control.
+WARNING: [Synth 8-3332] Sequential element (vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[27]) is unused and will be removed from module vsi_control.
+WARNING: [Synth 8-3332] Sequential element (vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[26]) is unused and will be removed from module vsi_control.
+WARNING: [Synth 8-3332] Sequential element (vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[25]) is unused and will be removed from module vsi_control.
+WARNING: [Synth 8-3332] Sequential element (vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[24]) is unused and will be removed from module vsi_control.
+WARNING: [Synth 8-3332] Sequential element (vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[23]) is unused and will be removed from module vsi_control.
+WARNING: [Synth 8-3332] Sequential element (vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[22]) is unused and will be removed from module vsi_control.
+WARNING: [Synth 8-3332] Sequential element (vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[21]) is unused and will be removed from module vsi_control.
+WARNING: [Synth 8-3332] Sequential element (vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[20]) is unused and will be removed from module vsi_control.
+WARNING: [Synth 8-3332] Sequential element (vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[19]) is unused and will be removed from module vsi_control.
+WARNING: [Synth 8-3332] Sequential element (vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[18]) is unused and will be removed from module vsi_control.
+WARNING: [Synth 8-3332] Sequential element (vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[17]) is unused and will be removed from module vsi_control.
+WARNING: [Synth 8-3332] Sequential element (vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[16]) is unused and will be removed from module vsi_control.
+WARNING: [Synth 8-3332] Sequential element (vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[15]) is unused and will be removed from module vsi_control.
+WARNING: [Synth 8-3332] Sequential element (vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[14]) is unused and will be removed from module vsi_control.
+WARNING: [Synth 8-3332] Sequential element (vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[13]) is unused and will be removed from module vsi_control.
+WARNING: [Synth 8-3332] Sequential element (vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[12]) is unused and will be removed from module vsi_control.
+WARNING: [Synth 8-3332] Sequential element (vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[11]) is unused and will be removed from module vsi_control.
+WARNING: [Synth 8-3332] Sequential element (vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[10]) is unused and will be removed from module vsi_control.
+WARNING: [Synth 8-3332] Sequential element (vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[9]) is unused and will be removed from module vsi_control.
+WARNING: [Synth 8-3332] Sequential element (vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[8]) is unused and will be removed from module vsi_control.
+WARNING: [Synth 8-3332] Sequential element (vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[7]) is unused and will be removed from module vsi_control.
+WARNING: [Synth 8-3332] Sequential element (vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[6]) is unused and will be removed from module vsi_control.
+WARNING: [Synth 8-3332] Sequential element (vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[5]) is unused and will be removed from module vsi_control.
+WARNING: [Synth 8-3332] Sequential element (vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[4]) is unused and will be removed from module vsi_control.
+WARNING: [Synth 8-3332] Sequential element (vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[3]) is unused and will be removed from module vsi_control.
+WARNING: [Synth 8-3332] Sequential element (vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[2]) is unused and will be removed from module vsi_control.
+WARNING: [Synth 8-3332] Sequential element (vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[1]) is unused and will be removed from module vsi_control.
+WARNING: [Synth 8-3332] Sequential element (vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1/din1_buf1_reg[0]) is unused and will be removed from module vsi_control.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 689.199 ; gain = 438.457
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 689.199 ; gain = 438.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 700.922 ; gain = 450.180
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 725.848 ; gain = 475.105
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 725.848 ; gain = 475.105
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 725.848 ; gain = 475.105
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 725.848 ; gain = 475.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 725.848 ; gain = 475.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 725.848 ; gain = 475.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 725.848 ; gain = 475.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------+----------+
+|      |BlackBox name         |Instances |
++------+----------------------+----------+
+|1     |floating_point_v7_1_2 |        10|
++------+----------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------------+------+
+|      |Cell                            |Count |
++------+--------------------------------+------+
+|1     |floating_point_v7_1_2_bbox      |     1|
+|2     |floating_point_v7_1_2_bbox_0    |     1|
+|3     |floating_point_v7_1_2_bbox_1    |     1|
+|4     |floating_point_v7_1_2_bbox_1__1 |     1|
+|5     |floating_point_v7_1_2_bbox_1__2 |     1|
+|6     |floating_point_v7_1_2_bbox_1__3 |     1|
+|7     |floating_point_v7_1_2_bbox_2    |     1|
+|8     |floating_point_v7_1_2_bbox_2__1 |     1|
+|9     |floating_point_v7_1_2_bbox_3    |     1|
+|10    |floating_point_v7_1_2_bbox_3__1 |     1|
+|11    |LUT1                            |    23|
+|12    |LUT2                            |    85|
+|13    |LUT3                            |   367|
+|14    |LUT4                            |   190|
+|15    |LUT5                            |   356|
+|16    |LUT6                            |   566|
+|17    |MUXF7                           |    35|
+|18    |FDRE                            |  1561|
+|19    |FDSE                            |     2|
++------+--------------------------------+------+
+
+Report Instance Areas: 
++------+----------------------------------------------------+---------------------------------------------+------+
+|      |Instance                                            |Module                                       |Cells |
++------+----------------------------------------------------+---------------------------------------------+------+
+|1     |top                                                 |                                             |  3527|
+|2     |  U0                                                |vsi_control                                  |  3527|
+|3     |    vsi_control_AXILiteS_s_axi_U                    |vsi_control_AXILiteS_s_axi                   |   594|
+|4     |    vsi_control_fadd_32ns_32ns_32_5_full_dsp_U1     |vsi_control_fadd_32ns_32ns_32_5_full_dsp     |    71|
+|5     |      vsi_control_ap_fadd_3_full_dsp_32_u           |vsi_control_ap_fadd_3_full_dsp_32            |    39|
+|6     |    vsi_control_faddfsub_32ns_32ns_32_5_full_dsp_U0 |vsi_control_faddfsub_32ns_32ns_32_5_full_dsp |   210|
+|7     |      vsi_control_ap_faddfsub_3_full_dsp_32_u       |vsi_control_ap_faddfsub_3_full_dsp_32        |    39|
+|8     |    vsi_control_fcmp_32ns_32ns_1_1_U8               |vsi_control_fcmp_32ns_32ns_1_1               |   154|
+|9     |      vsi_control_ap_fcmp_0_no_dsp_32_u             |vsi_control_ap_fcmp_0_no_dsp_32_9            |   154|
+|10    |    vsi_control_fcmp_32ns_32ns_1_1_U9               |vsi_control_fcmp_32ns_32ns_1_1_0             |    49|
+|11    |      vsi_control_ap_fcmp_0_no_dsp_32_u             |vsi_control_ap_fcmp_0_no_dsp_32              |    49|
+|12    |    vsi_control_fmul_32ns_32ns_32_4_max_dsp_U2      |vsi_control_fmul_32ns_32ns_32_4_max_dsp      |   233|
+|13    |      vsi_control_ap_fmul_2_max_dsp_32_u            |vsi_control_ap_fmul_2_max_dsp_32_8           |    39|
+|14    |    vsi_control_fmul_32ns_32ns_32_4_max_dsp_U3      |vsi_control_fmul_32ns_32ns_32_4_max_dsp_1    |   279|
+|15    |      vsi_control_ap_fmul_2_max_dsp_32_u            |vsi_control_ap_fmul_2_max_dsp_32_7           |    55|
+|16    |    vsi_control_fmul_32ns_32ns_32_4_max_dsp_U4      |vsi_control_fmul_32ns_32ns_32_4_max_dsp_2    |   151|
+|17    |      vsi_control_ap_fmul_2_max_dsp_32_u            |vsi_control_ap_fmul_2_max_dsp_32_6           |    55|
+|18    |    vsi_control_fmul_32ns_32ns_32_4_max_dsp_U5      |vsi_control_fmul_32ns_32ns_32_4_max_dsp_3    |    87|
+|19    |      vsi_control_ap_fmul_2_max_dsp_32_u            |vsi_control_ap_fmul_2_max_dsp_32             |    55|
+|20    |    vsi_control_sitofp_32ns_32_6_U6                 |vsi_control_sitofp_32ns_32_6                 |    63|
+|21    |      vsi_control_ap_sitofp_4_no_dsp_32_u           |vsi_control_ap_sitofp_4_no_dsp_32_5          |    39|
+|22    |    vsi_control_sitofp_32ns_32_6_U7                 |vsi_control_sitofp_32ns_32_6_4               |    51|
+|23    |      vsi_control_ap_sitofp_4_no_dsp_32_u           |vsi_control_ap_sitofp_4_no_dsp_32            |    39|
++------+----------------------------------------------------+---------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 725.848 ; gain = 475.105
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 34 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:38 . Memory (MB): peak = 725.848 ; gain = 197.695
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 725.848 ; gain = 475.105
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+138 Infos, 51 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 725.848 ; gain = 476.375
+INFO: [Common 17-1381] The checkpoint 'D:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.runs/top_design_vsi_control_0_0_synth_1/top_design_vsi_control_0_0.dcp' has been generated.

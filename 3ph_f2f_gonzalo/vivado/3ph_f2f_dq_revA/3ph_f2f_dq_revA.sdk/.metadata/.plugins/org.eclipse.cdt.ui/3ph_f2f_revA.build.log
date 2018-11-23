@@ -1,0 +1,97 @@
+17:18:08 **** Auto Build of configuration Debug for project 3ph_f2f_revA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/USB_commands.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/USB_commands.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../3ph_f2f_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/USB_commands.d" -MT"src/USB_commands.o" -o "src/USB_commands.o" "../src/USB_commands.c"
+../src/USB_commands.c: In function 'scopeDataTX':
+../src/USB_commands.c:106:6: warning: unused variable 'scope_header' [-Wunused-variable]
+  u32 scope_header = 0x02400000;
+      ^~~~~~~~~~~~
+../src/USB_commands.c:105:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status;
+      ^~~~~~
+'Finished building: ../src/USB_commands.c'
+' '
+'Building file: ../src/control_library.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/control_library.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../3ph_f2f_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/control_library.d" -MT"src/control_library.o" -o "src/control_library.o" "../src/control_library.c"
+../src/control_library.c: In function 'resetCPIaccum':
+../src/control_library.c:137:31: warning: passing argument 1 of 'XVoltage_control_Set_rstIntN' from incompatible pointer type [-Wincompatible-pointer-types]
+  XVoltage_control_Set_rstIntN(ICtrlInst,0x0); //Enable accumulator reset
+                               ^~~~~~~~~
+In file included from ../src/control_library.h:16:0,
+                 from ../src/control_library.c:9:
+../../3ph_f2f_bsp/ps7_cortexa9_0/include/xvoltage_control.h:84:6: note: expected 'XVoltage_control * {aka struct <anonymous> *}' but argument is of type 'XCurrent_control * {aka struct <anonymous> *}'
+ void XVoltage_control_Set_rstIntN(XVoltage_control *InstancePtr, u32 Data);
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/control_library.c:138:27: warning: passing argument 1 of 'XVsi_control_Set_rstIntN' from incompatible pointer type [-Wincompatible-pointer-types]
+  XVsi_control_Set_rstIntN(ICtrlInst,0x0);  //Enable accumulator reset
+                           ^~~~~~~~~
+In file included from ../src/control_library.h:13:0,
+                 from ../src/control_library.c:9:
+../../3ph_f2f_bsp/ps7_cortexa9_0/include/xvsi_control.h:84:6: note: expected 'XVsi_control * {aka struct <anonymous> *}' but argument is of type 'XCurrent_control * {aka struct <anonymous> *}'
+ void XVsi_control_Set_rstIntN(XVsi_control *InstancePtr, u32 Data);
+      ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/control_library.c:141:31: warning: passing argument 1 of 'XVoltage_control_Set_rstIntN' from incompatible pointer type [-Wincompatible-pointer-types]
+  XVoltage_control_Set_rstIntN(ICtrlInst,0x1); //Disable accumulator reset
+                               ^~~~~~~~~
+In file included from ../src/control_library.h:16:0,
+                 from ../src/control_library.c:9:
+../../3ph_f2f_bsp/ps7_cortexa9_0/include/xvoltage_control.h:84:6: note: expected 'XVoltage_control * {aka struct <anonymous> *}' but argument is of type 'XCurrent_control * {aka struct <anonymous> *}'
+ void XVoltage_control_Set_rstIntN(XVoltage_control *InstancePtr, u32 Data);
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/control_library.c:142:27: warning: passing argument 1 of 'XVsi_control_Set_rstIntN' from incompatible pointer type [-Wincompatible-pointer-types]
+  XVsi_control_Set_rstIntN(ICtrlInst,0x1); //Disable accumulator reset
+                           ^~~~~~~~~
+In file included from ../src/control_library.h:13:0,
+                 from ../src/control_library.c:9:
+../../3ph_f2f_bsp/ps7_cortexa9_0/include/xvsi_control.h:84:6: note: expected 'XVsi_control * {aka struct <anonymous> *}' but argument is of type 'XCurrent_control * {aka struct <anonymous> *}'
+ void XVsi_control_Set_rstIntN(XVsi_control *InstancePtr, u32 Data);
+      ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/control_library.c: In function 'abControlGetConfiguration':
+../src/control_library.c:120:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/control_library.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../3ph_f2f_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/scope_library.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/scope_library.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../3ph_f2f_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/scope_library.d" -MT"src/scope_library.o" -o "src/scope_library.o" "../src/scope_library.c"
+'Finished building: ../src/scope_library.c'
+' '
+'Building file: ../src/xusbps_ch9.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xusbps_ch9.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../3ph_f2f_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xusbps_ch9.d" -MT"src/xusbps_ch9.o" -o "src/xusbps_ch9.o" "../src/xusbps_ch9.c"
+'Finished building: ../src/xusbps_ch9.c'
+' '
+'Building file: ../src/xusbps_ch9_storage.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xusbps_ch9_storage.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../3ph_f2f_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xusbps_ch9_storage.d" -MT"src/xusbps_ch9_storage.o" -o "src/xusbps_ch9_storage.o" "../src/xusbps_ch9_storage.c"
+'Finished building: ../src/xusbps_ch9_storage.c'
+' '
+'Building file: ../src/xusbps_class_storage.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xusbps_class_storage.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../3ph_f2f_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xusbps_class_storage.d" -MT"src/xusbps_class_storage.o" -o "src/xusbps_class_storage.o" "../src/xusbps_class_storage.c"
+'Finished building: ../src/xusbps_class_storage.c'
+' '
+'Building target: 3ph_f2f_revA.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../3ph_f2f_bsp/ps7_cortexa9_0/lib -o "3ph_f2f_revA.elf"  ./src/USB_commands.o ./src/control_library.o ./src/main.o ./src/scope_library.o ./src/xusbps_ch9.o ./src/xusbps_ch9_storage.o ./src/xusbps_class_storage.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: 3ph_f2f_revA.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size 3ph_f2f_revA.elf  |tee "3ph_f2f_revA.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  57360	   3868	1139264	1200492	 12516c	3ph_f2f_revA.elf
+'Finished building: 3ph_f2f_revA.elf.size'
+' '
+
+17:18:10 Build Finished (took 1s.893ms)
+

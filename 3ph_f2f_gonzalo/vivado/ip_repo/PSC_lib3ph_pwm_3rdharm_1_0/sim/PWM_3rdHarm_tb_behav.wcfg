@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="PWM_3rdHarm_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="PWM_3rdHarm_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="20000000000001fs"></ZoomEndTime>
+      <Cursor1Time time="20000000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="15" />
+   <wvobject db_ref_id="1" fp_name="/PWM_3rdHarm_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/PWM_3rdHarm_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/PWM_3rdHarm_tb/DUT/tri_count" type="array">
+      <obj_property name="ElementShortName">tri_count[8:0]</obj_property>
+      <obj_property name="ObjectShortName">tri_count[8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/PWM_3rdHarm_tb/da" type="array">
+      <obj_property name="ElementShortName">da[8:0]</obj_property>
+      <obj_property name="ObjectShortName">da[8:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/PWM_3rdHarm_tb/DUT/thrdHarm_a" type="array">
+      <obj_property name="ElementShortName">thrdHarm_a[8:0]</obj_property>
+      <obj_property name="ObjectShortName">thrdHarm_a[8:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/PWM_3rdHarm_tb/s[0]" type="logic">
+      <obj_property name="ElementShortName">[0]</obj_property>
+      <obj_property name="ObjectShortName">s[0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/PWM_3rdHarm_tb/s[1]" type="logic">
+      <obj_property name="ElementShortName">[1]</obj_property>
+      <obj_property name="ObjectShortName">s[1]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/PWM_3rdHarm_tb/db" type="array">
+      <obj_property name="ElementShortName">db[8:0]</obj_property>
+      <obj_property name="ObjectShortName">db[8:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/PWM_3rdHarm_tb/DUT/thrdHarm_b" type="array">
+      <obj_property name="ElementShortName">thrdHarm_b[8:0]</obj_property>
+      <obj_property name="ObjectShortName">thrdHarm_b[8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/PWM_3rdHarm_tb/s[2]" type="logic">
+      <obj_property name="ElementShortName">[2]</obj_property>
+      <obj_property name="ObjectShortName">s[2]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/PWM_3rdHarm_tb/s[3]" type="logic">
+      <obj_property name="ElementShortName">[3]</obj_property>
+      <obj_property name="ObjectShortName">s[3]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/PWM_3rdHarm_tb/dc" type="array">
+      <obj_property name="ElementShortName">dc[8:0]</obj_property>
+      <obj_property name="ObjectShortName">dc[8:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/PWM_3rdHarm_tb/DUT/thrdHarm_c" type="array">
+      <obj_property name="ElementShortName">thrdHarm_c[8:0]</obj_property>
+      <obj_property name="ObjectShortName">thrdHarm_c[8:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/PWM_3rdHarm_tb/s[4]" type="logic">
+      <obj_property name="ElementShortName">[4]</obj_property>
+      <obj_property name="ObjectShortName">s[4]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/PWM_3rdHarm_tb/s[5]" type="logic">
+      <obj_property name="ElementShortName">[5]</obj_property>
+      <obj_property name="ObjectShortName">s[5]</obj_property>
+   </wvobject>
+</wave_config>

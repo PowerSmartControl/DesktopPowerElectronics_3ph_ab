@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Fri Jun  2 21:04:11 2017
+# Process ID: 3764
+# Current directory: D:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.runs/impl_1
+# Command line: vivado.exe -log top_design_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_design_wrapper.tcl -notrace
+# Log file: D:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.runs/impl_1/top_design_wrapper.vdi
+# Journal file: D:/Projects/3ph_f2f/vivado/3ph_f2f_revA/3ph_f2f_revA.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source top_design_wrapper.tcl -notrace

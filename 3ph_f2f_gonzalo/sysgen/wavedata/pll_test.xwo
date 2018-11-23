@@ -1,0 +1,7 @@
+{
+	'objects' => [
+		{
+			'name' => '/pll_test/Clock'
+		},
+	],
+}

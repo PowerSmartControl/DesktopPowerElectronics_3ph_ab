@@ -1,0 +1,21 @@
+//INPUT STAGE
+Vin_dc = 27
+pi = 3.141592
+
+//Regulador inversor
+R2 = 281.441 Ohm
+C2 = 103.27n F
+Vref = 5 V
+Vp = 1 V
+R1 = 4.28283k Ohm
+C1 = 2.03492n F
+//Modulator parameters
+Vpp = 1 V
+//fsw = 100k Hz
+Dramp = 1000m
+Vv = 0 V
+//Other parameters
+Rar = 7.14286k Ohm
+C3 = 44.2288n F
+R11 = 10k Ohm
+

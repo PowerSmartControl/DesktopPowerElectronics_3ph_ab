@@ -1,0 +1,85 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 2017.2                 C:/Xilinx/Vivado/2017.2
+Matlab 9.0.0.341360 (R2016a)            C:\Program Files\MATLAB\R2016a
+Vivado 2017.2                           C:/Xilinx/Vivado/2017.2
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Undriven input port
+     Block: 'pll_test/ab2dq/Mult2'
+Error 0002: Undriven input port
+     Block: 'pll_test/ab2dq/CORDIC SINCOS/Quadrant Map/AddSub'
+Error 0003: Undriven input port
+     Block: 'pll_test/ab2dq/CORDIC SINCOS/Quadrant Map/Delay1'
+Error 0004: Undriven input port
+     Block: 'pll_test/ab2dq/CORDIC SINCOS/Quadrant Map/Relational'
+Error 0005: Undriven input port
+     Block: 'pll_test/ab2dq/CORDIC SINCOS/Quadrant Map/Relational1'
+Error 0006: Undriven input port
+     Block: 'pll_test/ab2dq/CORDIC SINCOS/Quadrant Map/sgn(z)'
+Error 0007: Undriven input port
+     Block: 'pll_test/ab2dq/Mult1'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'pll_test/ab2dq/Mult2'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'pll_test/ab2dq/CORDIC SINCOS/Quadrant Map/AddSub'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'pll_test/ab2dq/CORDIC SINCOS/Quadrant Map/Delay1'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'pll_test/ab2dq/CORDIC SINCOS/Quadrant Map/Relational'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'pll_test/ab2dq/CORDIC SINCOS/Quadrant Map/Relational1'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'pll_test/ab2dq/CORDIC SINCOS/Quadrant Map/sgn(z)'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'pll_test/ab2dq/Mult1'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------

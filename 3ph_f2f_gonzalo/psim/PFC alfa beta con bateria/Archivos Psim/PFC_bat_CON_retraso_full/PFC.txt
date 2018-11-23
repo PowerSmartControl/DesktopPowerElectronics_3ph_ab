@@ -1,0 +1,72 @@
+//******3 PH PFC Alpha Beta controlled******
+//*************************************
+
+//calculos de tensiones de linea, pico...:
+//******************************
+Vg_e = 12                                    // Valor detension de fase de pico del bus trifasico
+Vgrms_e = Vg_e/sqrt(2)              // Valor eficaz
+VgLLrms_e = Vgrms_e*sqrt(3)    // linea eficaz
+VgLLpk_e = VgLLrms_e*sqrt(2)   // linea de pico
+
+//parametros de la planta:
+//*******************
+fline_e = 50
+Vo_ref_e = 28                             // tension de la bateria conectada
+Po_e = 30                                    // Referencia de potencia a extraer
+C = 56e-6
+L = 330e-6
+Co = 1000e-6
+Ci = 1000e-6
+
+// Perametros del muestreo:
+//**********************
+fsw = 100k
+Tsw = 1/fsw
+Tint = Tsw
+
+// Sensor de corriente:
+//****************
+fco_e = 10e3
+Ksc_e = 1
+
+
+// Output DC voltage sensor:
+//*********************
+Vref_e = 4.33
+fcovo_e = 10e3
+
+
+// Input AC voltage sensor:
+//********************
+Vgmax_e = Vo_ref_e/2
+Gainvg_e = 1
+
+//parametros de la onda moduladora:
+//****************************
+//Vp_e = 1
+Vp_e = 250
+fsw_e = fsw
+
+// PWM Modulator:
+//*************
+Modmax_e = 1.2*Vp_e // Saturation value for the modulating signal
+
+// Soft Start:
+//********
+Coef_Vss_max_e = 0.95 // Takes into account that the output capacitor asymptote is lower than the line to line amplitude
+Vss_max_e = Coef_Vss_max_e*VgLLpk_e
+Vss_min_e = 0.8*Vss_max_e
+
+//Reguladores PI para lazo interno de corriente:
+//************************************
+//Ti1 = 253.601u      //PI con amplitud de modulador entre 0 y 1
+//Kp1 = 251.87m
+
+//Ti1 = 235.6u            //PI con amplitud de modulador entre -250 y 250
+//Kp1 =125.94
+
+Ti1 = 400u            //PI con amplitud de modulador entre -250 y 250
+Kp1 =150
+
+//Ti1 = 0.001            //PI con amplitud de modulador entre -250 y 250
+//Kp1 =150

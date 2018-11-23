@@ -1,0 +1,40 @@
+//******3 PH PFC Alpha Beta controlled******
+//*************************************
+//se añade retardo digital de 10us (1 periodo de conmutacion)
+
+// Etapa de potencia
+Po = 30
+Vo = 28
+R = Vo*Vo/Po
+C = 1e-6
+L = 330e-6
+Vp = 1
+fsw = 100e3
+Tsw = 1/fsw
+ee=2.71
+
+//funcion de transferencia de la planta de corriente:
+//**************************************************
+ZL = L*s
+Givm = pow(ee,-s*Tsw)*(0.5*(Vo/Vp)/ZL)
+
+// return Givm
+
+//funcion de transferencia del sensor de corriente:
+//************************************************
+fco = 10e3
+Ksc = 1
+Gsc = pow(ee,-s*Tsw)/(1+s/(2*PI*fco))    //ganancia unitaria y un polo dominante
+
+//Nota: En este PFC se ha anadido una fuente de tension que impone el voltaje a la salida y por esto no se requiere el uso de un lazo externo de tension
+
+
+//funcion de transferencia de la planta de corriente:
+//**************************************************
+return Givm
+
+//funcion de transferencia del sensor de corriente:
+//************************************************
+// return Gsc
+
+//sintonizar a fc=1KHz y PH=45º
